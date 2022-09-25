@@ -1,0 +1,51 @@
+@import "../../common/variables";
+@import "../../common/extends";
+
+header{
+  .header {
+    @extend %display-space-between;
+    margin-top: 2.5rem;
+    &__nav {
+      @extend %display-space-between;
+      gap: 3.75rem;
+      padding-left: 74px;
+      margin: 0;
+      align-items: center;
+    }
+    &__li {
+      @extend %h3-text;
+      list-style: none;
+      font-weight: $medium;
+    }
+    &__link {
+      text-decoration: none;
+      color: $text-main;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    &__num {
+      display: flex;
+      gap: 0.25rem;
+      align-items: center;
+    }
+    &__number {
+      @extend %h3-text;
+      margin: 0 auto;
+    }
+    &__text {
+      @extend %h3-text;
+      color: $accent-color;
+      text-decoration: none;
+      font-weight: $medium;
+    }
+    &__text:hover{
+      color: $btn-hover;
+      font-weight: $bold;
+      text-decoration: underline;
+    }
+  }
+}

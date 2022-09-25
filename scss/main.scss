@@ -1,0 +1,12 @@
+@import "./common";
+@import "../scss/components/header";
+@import "../scss/components/buttons";
+@import "../scss/components/footer";
+
+html,
+body {
+  font-size: 16px;
+  font-family: $font-stack;
+  color: $text-main;
+}
+

@@ -1,0 +1,22 @@
+@import "../../common/variables";
+@import "../../common/extends";
+
+.btn {
+  color: $btn_text_color;
+  background: $btn-color;
+  border: none;
+  font-weight: $bold;
+  cursor: pointer;
+  transition: 300ms;
+  border-radius: 4px;
+}
+.btn:hover {
+  background: $btn-hover;
+  box-shadow: 0 0 30px rgba(83, 199, 240, 0.36);
+}
+/*banner*/
+
+.banner__btn {
+  @extend %h2-text;
+  padding: 1.5rem 7.5rem;
+}

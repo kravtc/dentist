@@ -1,0 +1,69 @@
+@import "../../common/variables";
+@import "../../common/extends";
+
+
+
+.footer__bg {
+  background-color: $bg-footer;
+  margin-top: 5rem;
+}
+
+.footer {
+  @extend %display-space-between;
+  padding: 50px 0;
+  &__title {
+    @extend %h3-text;
+    font-weight: $medium;
+    margin: 0 0 .5rem;
+  }
+  &__info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__info li:last-child {
+    margin-bottom: 0;
+  }
+  &__info li{
+    margin-bottom: 1.5rem;
+  }
+  &__info p{
+    margin: 0;
+    @extend %h3-text;
+  }
+  &__social {
+    width: 130px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__social a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+  &__social a::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-size: 100% 100%;
+  }
+  &__link-vk::before {
+    background-image: url(../../../img/social/soc-vk.svg);
+  }
+  &__link-inst::before {
+    background-image: url(../../../img/social/soc-int.svg);
+  }
+  &__link-tg::before {
+    background-image: url(../../../img/social/soc-tg.svg);
+  }
+  &__link-fb::before {
+    background-image: url(../../../img/social/soc-fb.svg);
+  }
+}
