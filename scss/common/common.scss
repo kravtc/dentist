@@ -7,40 +7,22 @@
 .title {
   @extend %h2-text;
   font-weight: $bold;
-}
-
-/*backgrounds*/
-.bg-banner {
-  margin-top: 2rem;
-  height: 40rem;
-  background-image: url(../../img/bg/bg-banner.png);
-  background-repeat: no-repeat;
-  background-position: 60% 57%;
-}
-.bg-information {
-  background-image: url(../../img/bg/bg__info.svg);
-  background-repeat: no-repeat;
-  background-position: 0 78%;
-  margin-top: 8rem;
-}
-.bg-advantage {
-  margin-top: 100px;
-  background-image: url(../../img/bg/ad_bg.svg);
-  background-repeat: no-repeat;
-  background-position: 0 75%;
-}
-.bg-form {
-  height: 40rem;
-  background-image: url(../../img/bg/bg-form.png);
-  background-repeat: no-repeat;
-  background-position: 60% 57%;
+  text-align: center;
+  margin: 0 0 30px;
 }
 
 
 
 /*banner*/
 .banner {
-  @extend %display-space-between;
+    margin-top: 3rem;
+    height: 40rem;
+    background-image: url(../../img/bg/bg-banner.png);
+    background-repeat: no-repeat;
+    background-position: 60% 57%;
+  &__wrapp {
+    @extend %display-space-between;
+  }
   &__info {
     margin-top: 10rem;
   }
@@ -48,7 +30,6 @@
     @extend %h1-text;
     font-weight: $medium;
     width: 590px;
-    margin: 0;
   }
   &__text {
     @extend %h2-text;
@@ -94,14 +75,12 @@
   }
 }
 .discount {
-  margin-top: 110px;
-  &__title {
-    margin:0;
+  &__wrapp {
+    margin-top: 110px;
   }
   &__items {
     display: flex;
     justify-content: space-between;
-    margin-top: 42px;
   }
   &__cover {
     overflow: hidden;
@@ -142,9 +121,15 @@
 
 /*about us*/
 .information {
-  margin-top: 6.25rem;
-  display: flex;
-  justify-content: space-between;
+  background-image: url(../../img/bg/bg__info.svg);
+  background-repeat: no-repeat;
+  background-position: 0 78%;
+  margin-top: 8rem;
+  &__wrapp {
+    margin-top: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+  }
   &__block {
     display: flex;
     flex-direction: column;
@@ -185,76 +170,23 @@
 
 /*advantage*/
 .advantage {
-  display: grid;
-  gap: 20px 50px;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 58px;
-  &__title {
-    margin: 0;
+  margin-top: 6.25rem;
+  background-image: url(../../img/bg/ad_bg.svg);
+  background-repeat: no-repeat;
+  background-position: 0 75%;
+  &__items {
+    display: grid;
+    gap: 20px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 58px;
   }
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  &__info {
-    margin-top: 10.05rem;
-  }
-  &__title {
-    display: block;
-    width: 687px;
-    margin: 0;
-  }
-  &__title span {
-    color: $accent-color;
-    text-align: left;
-  }
-  &__text {
-    @extend %h3-text;
-    margin: 1rem 0 2.4rem;
-  }
-  &__inputs {
-    display: flex;
-    flex-direction: column;
-    @extend %h3-text;
-  }
-  &__input {
-    margin-bottom: 22px;
-    border-radius: 6px;
-    width: 620px;
-    padding: 12px 20px;
-    background-color: #FDFFFF;
-    border: 2px solid $accent-color;
-    outline: none;
-  }
-  &__input::placeholder {
-    color: #769297;
-  }
-  &__select {
-    width: 666px;
-    border: 2px solid $accent-color;
-    padding: 12px 0 12px 20px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border-radius: 6px;
-    background-image: url(../../img/common/select.svg);
-    background-repeat: no-repeat;
-    background-position: 98% center;
-  }
-  &__select:focus {
-    outline: none;
-    background-image: none;
-  }
-  &__btn {
-    padding: 20px 90px;
-    font-size: 1.125rem;
-    text-align: center;
-    margin: 44px 0 0 187px;
-  }
-}
 
 .service {
+  &__wrapp {
+    margin-top: 6.25rem;
+  }
   margin-top: 5rem;
   &__items {
     display: grid;
@@ -275,7 +207,6 @@
   }
   &__name::before {
     content: '';
-    background-image: url("../../img/service/la_teeth.svg");
     background-repeat: no-repeat;
     position: absolute;
     width: 15%;
@@ -283,6 +214,24 @@
     display: block;
     top: 4%;
     left: -11%;
+  }
+  &__name.therapy::before {
+    background-image: url("../../img/service/icon2.svg");
+  }
+  &__name.orthopedics::before {
+    background-image: url("../../img/service/la_teeth.svg");
+  }
+  &__name.prevention::before {
+    background-image: url("../../img/service/mdi_toothbrush-paste.png");
+  }
+  &__name.surgery::before {
+    background-image: url("../../img/service/icon4.svg");
+  }
+  &__name.imlpantation::before {
+    background-image: url("../../img/service/icon5.svg");
+  }
+  &__name.whitening::before {
+    background-image: url("../../img/service/icon6.svg");
   }
   &__name::after {
     content: '';
@@ -300,6 +249,9 @@
     flex-direction: column;
     padding: 10px 16px;
     border-top: 1px solid $accent-color;
+  }
+  .open.service__open {
+    display: flex;
   }
   &__body {
     height: 180px;
@@ -339,12 +291,32 @@
     font-weight: $medium;
   }
   &__close {
-    background-image: url(../../img/service/hirurgy.png);
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+  &__close.therapy {
+    background-image: url(../../img/service/therapy.png);
+  }
+  &__close.orthopedics {
+    background-image: url(../../img/service/orthopedics.png);
+  }
+  &__close.prevention {
+    background-image: url(../../img/service/prevention.png);
+  }
+  &__close.surgery {
+    background-image: url(../../img/service/surgery.png);
+  }
+  &__close.imlpantation {
+    background-image: url(../../img/service/imlpantation.png);
+  }
+  &__close.whitening {
+    background-image: url(../../img/service/whitening.png);
+  }
+  .close.service__close {
+    display: none;
   }
   &__showMore {
     cursor: pointer;
@@ -352,6 +324,12 @@
 }
 
 .comment {
+  margin-top: 6.25rem;
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   &__head {
     @extend %display-space-between;
     @extend %h3-text;
@@ -362,7 +340,7 @@
   }
   &__items {
     display: flex;
-
+    margin: 0 0 40px;
   }
   &__item {
     flex: 33.33%;
@@ -375,33 +353,22 @@
     border-radius: 6px;
     padding: 15px;
   }
-  .btn-next2 {
-    right: 0;
-  }
-  .btn-prev2 {
-    left: 0;
-  }
-  .btn-prev2,
-  .btn-next2 {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 1rem;
+  &__link {
+    border-radius: 6px;
+    padding: 1rem 1.4rem;
+    background-color: $btn-color;
+    text-decoration: none;
     color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    background-color: rgba(11, 174, 232, 0.34);
+    cursor: pointer;
+    text-align: center;
   }
-  .btn-prev2:hover,
-  .btn-next2:hover {
-    background-color: rgba(11, 111, 146, 0.66);
+  &__link:hover {
+    background-color: $btn-hover;
   }
 }
 .slider-container2 {
   overflow: hidden;
   position: relative;
 }
+
 

@@ -3,14 +3,14 @@
 
 
 
-.footer__bg {
-  background-color: $bg-footer;
-  margin-top: 5rem;
-}
 
 .footer {
-  @extend %display-space-between;
-  padding: 50px 0;
+  background-color: $bg-footer;
+  margin-top: 6.25rem;
+  &__wrapp {
+    @extend %display-space-between;
+    padding: 50px 0;
+  }
   &__title {
     @extend %h3-text;
     font-weight: $medium;

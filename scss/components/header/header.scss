@@ -21,6 +21,10 @@ header{
       text-decoration: none;
       color: $text-main;
     }
+    &__link:hover {
+      color: $btn-hover;
+      font-weight: $medium;
+    }
     &__info {
       display: flex;
       flex-direction: column;

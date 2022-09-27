@@ -1,0 +1,70 @@
+@import "../../common/variables";
+@import "../../common/extends";
+
+.form {
+  margin-top: 6.25rem;
+  height: 40rem;
+  background-image: url(../../../img/bg/bg-form.png);
+  background-repeat: no-repeat;
+  background-position: 60% 57%;
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+  }
+  &__info {
+    margin-top: 10.05rem;
+  }
+  &__title {
+    display: block;
+    width: 687px;
+    margin: 0;
+    text-align: left;
+  }
+  &__title span {
+    color: $accent-color;
+    text-align: left;
+  }
+  &__text {
+    @extend %h3-text;
+    margin: 1rem 0 2.4rem;
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    @extend %h3-text;
+  }
+  &__input {
+    margin-bottom: 22px;
+    border-radius: 6px;
+    width: 620px;
+    padding: 12px 20px;
+    background-color: #FDFFFF;
+    border: 2px solid $accent-color;
+    outline: none;
+  }
+  &__input::placeholder {
+    color: #769297;
+  }
+  &__select {
+    width: 666px;
+    border: 2px solid $accent-color;
+    padding: 12px 0 12px 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 6px;
+    background-image: url(../../../img/common/select.svg);
+    background-repeat: no-repeat;
+    background-position: 98% center;
+  }
+  &__select:focus {
+    outline: none;
+    background-image: none;
+  }
+  &__btn {
+    padding: 20px 90px;
+    font-size: 1.125rem;
+    text-align: center;
+    margin: 44px 0 0 187px;
+  }
+}

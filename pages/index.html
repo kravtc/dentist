@@ -33,9 +33,9 @@
             </div>
         </div>
     </header>
-    <main class="bg-banner">
+    <main class="banner">
         <div class="container">
-            <div class="banner">
+            <div class="banner__wrapp">
                 <div class="banner__info">
                     <h1 class="banner__title"><span class="banner__span">Наша миссия</span> – сделать современную стоматологию доступной для всех.</h1>
                     <h2 class="banner__text">Запишитесь на <span class="banner__span">БЕСПЛАТНУЮ</span> консультацию</h2>
@@ -45,9 +45,9 @@
             </div>
         </div>
     </main>
-    <section>
+    <section class="discount">
         <div class="container">
-            <div class="discount">
+            <div class="discount__wrapp">
                 <h2 class="discount__title title">Выгодные предложения</h2>
                 <div class="slider-container">
                     <div class="discount__items">
@@ -97,6 +97,24 @@
                                 <a href="#" class="discount__link">Записаться</a>
                             </div>
                         </div>
+                        <div class="discount__card">
+                            <div class="discount__cover">
+                                <img src="../img/discount/1.png" alt="Discount_1" class="discount__img">
+                            </div>
+                            <div class="discount__info">
+                                <p class="discount__text">Скидка 50% на первое посещение!</p>
+                                <a href="#" class="discount__link">Записаться</a>
+                            </div>
+                        </div>
+                        <div class="discount__card">
+                            <div class="discount__cover">
+                                <img src="../img/discount/2.png" alt="Discount_1" class="discount__img">
+                            </div>
+                            <div class="discount__info">
+                                <p class="discount__text">Больше друзей - больше скидок!</p>
+                                <a href="#" class="discount__link">Записаться</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="slider-buttons">
                         <a class="btn-prev">&#10094;</a>
@@ -106,9 +124,9 @@
             </div>
         </div>
     </section>
-    <section class="bg-information">
+    <section class="information">
         <div class="container">
-            <div class="information">
+            <div class="information__wrapp">
                 <img src="../img/common/about_us.png" alt="AboutUs">
                 <div class="information__block">
                     <h2 class="information__title title">О нас</h2>
@@ -118,49 +136,51 @@
             </div>
         </div>
     </section>
-    <section class="bg-advantage">
+    <section class="advantage">
         <div class="container">
-            <h2 class="advantage__title title">Почему стоит обратиться к нам?</h2>
-            <div class="advantage">
-                <div class="advantage__item">
-                    <img src="../img/advantage/advantage1.svg" alt="advantage1">
-                </div>
-                <div class="advantage__item">
-                    <img src="../img/advantage/advantage2.svg" alt="advantage1">
-                </div>
-                <div class="advantage__item">
-                    <img src="../img/advantage/advantage3.svg" alt="advantage1">
-                </div>
-                <div class="advantage__item">
-                    <img src="../img/advantage/advantage4.svg" alt="advantage1">
-                </div>
-                <div class="advantage__item">
-                    <img src="../img/advantage/advantage5.svg" alt="advantage1">
-                </div>
-                <div class="advantage__item">
-                    <img src="../img/advantage/advantage6.svg" alt="advantage1">
+            <div class="advantage__wrapp">
+                <h2 class="advantage__title title">Почему стоит обратиться к нам?</h2>
+                <div class="advantage__items">
+                    <div class="advantage__item">
+                        <img src="../img/advantage/advantage1.svg" alt="advantage1">
+                    </div>
+                    <div class="advantage__item">
+                        <img src="../img/advantage/advantage2.svg" alt="advantage1">
+                    </div>
+                    <div class="advantage__item">
+                        <img src="../img/advantage/advantage3.svg" alt="advantage1">
+                    </div>
+                    <div class="advantage__item">
+                        <img src="../img/advantage/advantage4.svg" alt="advantage1">
+                    </div>
+                    <div class="advantage__item">
+                        <img src="../img/advantage/advantage5.svg" alt="advantage1">
+                    </div>
+                    <div class="advantage__item">
+                        <img src="../img/advantage/advantage6.svg" alt="advantage1">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section class="service">
         <div class="container">
-            <div class="service">
+            <div class="service__wrapp">
                 <h2 class="service__title title">Наши услуги</h2>
                 <div class="service__items">
                     <div class="service__item">
                         <div class="service__showMore">
-                            <p class="service__name">Хирургия</p>
+                            <p class="service__name therapy">Лечение зубов</p>
                         </div>
                         <div class="service__body">
-                            <div class="service__close"></div>
+                            <div class="service__close therapy"></div>
                             <div class="service__open">
                                 <div class="service__price-list">
                                     <ul class="service__ul">
-                                        <li class="service__li">Удаление простое</li>
-                                        <li class="service__li">Удаление сложное</li>
-                                        <li class="service__li">Удаление средней сложности</li>
-                                        <li class="service__li">Удаление нерва</li>
+                                        <li class="service__li">Кариес поверхностный</li>
+                                        <li class="service__li">Кариес средний</li>
+                                        <li class="service__li">Кариес глубокий</li>
+                                        <li class="service__li">Пломба под коронку</li>
                                     </ul>
                                     <ul class="service__ul">
                                         <li class="service__li">1300₽</li>
@@ -175,17 +195,67 @@
                     </div>
                     <div class="service__item">
                         <div class="service__showMore">
-                            <p class="service__name">Хирургия</p>
+                            <p class="service__name orthopedics">Ортопедия</p>
                         </div>
                         <div class="service__body">
-                            <div class="service__close"></div>
+                            <div class="service__close orthopedics"></div>
+                            <div class="service__open">
+                                <div class="service__price-list">
+                                    <ul class="service__ul">
+                                        <li class="service__li">Металлокерамика</li>
+                                        <li class="service__li">Цельнолитая коронка</li>
+                                        <li class="service__li">Культевая вкладка (КХС)</li>
+                                        <li class="service__li">Виниры Е- МАХ</li>
+                                    </ul>
+                                    <ul class="service__ul">
+                                        <li class="service__li">9900₽</li>
+                                        <li class="service__li">7000₽</li>
+                                        <li class="service__li">6000₽</li>
+                                        <li class="service__li">1600₽</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="service__link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__showMore">
+                            <p class="service__name prevention">Профилактика</p>
+                        </div>
+                        <div class="service__body">
+                            <div class="service__close prevention"></div>
+                            <div class="service__open">
+                                <div class="service__price-list">
+                                    <ul class="service__ul">
+                                        <li class="service__li">Профилактический осмотр</li>
+                                        <li class="service__li">Удаление зубного камня</li>
+                                        <li class="service__li">Профессиональная чистка</li>
+                                        <li class="service__li"></li>
+                                    </ul>
+                                    <ul class="service__ul">
+                                        <li class="service__li">500₽</li>
+                                        <li class="service__li">1900₽</li>
+                                        <li class="service__li">2000₽</li>
+                                        <li class="service__li"></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="service__link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <div class="service__showMore">
+                            <p class="service__name surgery">Хирургия</p>
+                        </div>
+                        <div class="service__body">
+                            <div class="service__close surgery"></div>
                             <div class="service__open">
                                 <div class="service__price-list">
                                     <ul class="service__ul">
                                         <li class="service__li">Удаление простое</li>
                                         <li class="service__li">Удаление сложное</li>
                                         <li class="service__li">Удаление средней сложности</li>
-                                        <li class="service__li">Удаление нерва</li>
+                                        <li class="service__li">Удаление зуба мудрости</li>
                                     </ul>
                                     <ul class="service__ul">
                                         <li class="service__li">1300₽</li>
@@ -200,23 +270,23 @@
                     </div>
                     <div class="service__item">
                         <div class="service__showMore">
-                            <p class="service__name">Хирургия</p>
+                            <p class="service__name imlpantation">Имплантация</p>
                         </div>
                         <div class="service__body">
-                            <div class="service__close"></div>
+                            <div class="service__close imlpantation"></div>
                             <div class="service__open">
                                 <div class="service__price-list">
                                     <ul class="service__ul">
-                                        <li class="service__li">Удаление простое</li>
-                                        <li class="service__li">Удаление сложное</li>
-                                        <li class="service__li">Удаление средней сложности</li>
-                                        <li class="service__li">Удаление нерва</li>
+                                        <li class="service__li">Установка имплантата</li>
+                                        <li class="service__li">Металлокерамика на имплантате</li>
+                                        <li class="service__li">«Все-на-4» all-on-4  всё включено</li>
+                                        <li class="service__li">Установка имплантата Dentis</li>
                                     </ul>
                                     <ul class="service__ul">
-                                        <li class="service__li">1300₽</li>
-                                        <li class="service__li">1900₽</li>
-                                        <li class="service__li">2000₽</li>
-                                        <li class="service__li">3300₽</li>
+                                        <li class="service__li">29000₽</li>
+                                        <li class="service__li">25000₽</li>
+                                        <li class="service__li">20000₽</li>
+                                        <li class="service__li">30300₽</li>
                                     </ul>
                                 </div>
                                 <a href="#" class="service__link">Подробнее</a>
@@ -225,72 +295,22 @@
                     </div>
                     <div class="service__item">
                         <div class="service__showMore">
-                            <p class="service__name">Хирургия</p>
+                            <p class="service__name whitening">Отбеливание зубов</p>
                         </div>
                         <div class="service__body">
-                            <div class="service__close"></div>
+                            <div class="service__close whitening"></div>
                             <div class="service__open">
                                 <div class="service__price-list">
                                     <ul class="service__ul">
-                                        <li class="service__li">Удаление простое</li>
-                                        <li class="service__li">Удаление сложное</li>
-                                        <li class="service__li">Удаление средней сложности</li>
-                                        <li class="service__li">Удаление нерва</li>
+                                        <li class="service__li">Чистка зубов Аir Flow</li>
+                                        <li class="service__li">Покрытие зубов фтор лаком</li>
+                                        <li class="service__li">Отбеливание (Opalescence)</li>
+                                        <li class="service__li">Чистка одного зуба</li>
                                     </ul>
                                     <ul class="service__ul">
-                                        <li class="service__li">1300₽</li>
+                                        <li class="service__li">3000₽</li>
                                         <li class="service__li">1900₽</li>
-                                        <li class="service__li">2000₽</li>
-                                        <li class="service__li">3300₽</li>
-                                    </ul>
-                                </div>
-                                <a href="#" class="service__link">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service__item">
-                        <div class="service__showMore">
-                            <p class="service__name">Хирургия</p>
-                        </div>
-                        <div class="service__body">
-                            <div class="service__close"></div>
-                            <div class="service__open">
-                                <div class="service__price-list">
-                                    <ul class="service__ul">
-                                        <li class="service__li">Удаление простое</li>
-                                        <li class="service__li">Удаление сложное</li>
-                                        <li class="service__li">Удаление средней сложности</li>
-                                        <li class="service__li">Удаление нерва</li>
-                                    </ul>
-                                    <ul class="service__ul">
-                                        <li class="service__li">1300₽</li>
-                                        <li class="service__li">1900₽</li>
-                                        <li class="service__li">2000₽</li>
-                                        <li class="service__li">3300₽</li>
-                                    </ul>
-                                </div>
-                                <a href="#" class="service__link">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service__item">
-                        <div class="service__showMore">
-                            <p class="service__name">Хирургия</p>
-                        </div>
-                        <div class="service__body">
-                            <div class="service__close"></div>
-                            <div class="service__open">
-                                <div class="service__price-list">
-                                    <ul class="service__ul">
-                                        <li class="service__li">Удаление простое</li>
-                                        <li class="service__li">Удаление сложное</li>
-                                        <li class="service__li">Удаление средней сложности</li>
-                                        <li class="service__li">Удаление нерва</li>
-                                    </ul>
-                                    <ul class="service__ul">
-                                        <li class="service__li">1300₽</li>
-                                        <li class="service__li">1900₽</li>
-                                        <li class="service__li">2000₽</li>
+                                        <li class="service__li">15000₽</li>
                                         <li class="service__li">3300₽</li>
                                     </ul>
                                 </div>
@@ -302,9 +322,9 @@
             </div>
         </div>
     </section>
-    <section class="bg-form">
+    <section class="form">
         <div class="container">
-            <div class="form">
+            <div class="form__wrapp">
                 <div class="form__info">
                     <h2 class="form__title title">ЗАПИШИТЕСЬ НА <span>БЕСПЛАТНУЮ</span> КОНСУЛЬТАЦИЮ ПРЯМО СЕЙЧАС</h2>
                     <p class="form__text">Заполните форму и наш оператор свяжется с вами в ближайшее время</p>
@@ -327,11 +347,10 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="comment">
         <div class="container">
-            <div class="comment">
+            <div class="comment__wrapp">
                 <h2 class="comment__title title">Отзывы</h2>
-                <div class="slider-container2">
                     <div class="comment__items">
                         <div class="comment__item">
                             <div class="comment__inside">
@@ -355,17 +374,6 @@
 
                             </div>
                         </div>
-                        <!--<div class="comment__item">
-                            <div class="comment__inside">
-                                <div class="comment__head">
-                                    <p class="comment__user">Пациент 3</p>
-                                    <time class="comment__time">20 января 2019</time>
-                                </div>
-                                <p class="comment__text">Мне понравилось в клинике все - доктора хорошие, администраторы прекрасные, кофе и чай вкусные.</p>
-                                <img src="../img/common/stars.svg" alt="Rating" class="comment__rating">
-
-                            </div>
-                        </div>
                         <div class="comment__item">
                             <div class="comment__inside">
                                 <div class="comment__head">
@@ -376,41 +384,15 @@
                                 <img src="../img/common/stars.svg" alt="Rating" class="comment__rating">
 
                             </div>
-                        </div>-->
-                        <!--<div class="comment__item">
-                            <div class="comment__inside">
-                                <div class="comment__head">
-                                    <p class="comment__user">Пациент 42</p>
-                                    <time class="comment__time">20 января 2019</time>
-                                </div>
-                                <p class="comment__text">Всегда приветливые администраторы! Спасибо всему коллективу клиники за индивидуальный подход и здоровую улыбку!</p>
-                                <img src="../img/common/stars.svg" alt="Rating" class="comment__rating">
-
-                            </div>
-                        </div>-->
-                        <div class="comment__item">
-                            <div class="comment__inside">
-                                <div class="comment__head">
-                                    <p class="comment__user">Пациент 3</p>
-                                    <time class="comment__time">20 января 2019</time>
-                                </div>
-                                <p class="comment__text">Мне понравилось в клинике все - доктора хорошие, администраторы прекрасные, кофе и чай вкусные.</p>
-                                <img src="../img/common/stars.svg" alt="Rating" class="comment__rating">
-
-                            </div>
-                        </div>
-                        <div class="slider-buttons">
-                            <a class="btn-prev2">&#10094;</a>
-                            <a class="btn-next2">&#10095;</a>
                         </div>
                     </div>
-                </div>
+                <a href="#" class="comment__link">Посмотреть все отзывы</a>
             </div>
         </div>
     </section>
-    <footer class="footer__bg">
+    <footer class="footer">
         <div class="container">
-            <div class="footer">
+            <div class="footer__wrapp">
                 <a href="#" class="header__logotype"><img src="../img/common/Logotype.svg" alt="Logotype"></a>
                 <ul class="footer__info">
                     <li class="footer__li"><h5 class="footer__title">Контакты</h5><p>+7 (968) 499 - 00 - 03</p></li>
@@ -433,6 +415,5 @@
     </footer>
     <script src="../assets/js/itc-slider.js" defer></script>
     <script src="../assets/js/showMore.js" defer></script>
-    <!--<script src="../assets/js/test.js"></script>-->
 </body>
 </html>
