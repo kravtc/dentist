@@ -11,28 +11,28 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header">
-                <a href="#" class="header__logotype"><img src="../img/common/Logotype.svg" alt="Logotype"></a>
-                <nav>
-                    <ul class="header__nav">
-                        <li class="header__li"><a href="#" class="header__link">Главная</a></li>
-                        <li class="header__li"><a href="#" class="header__link">Услуги</a></li>
-                        <li class="header__li"><a href="#" class="header__link">О нас</a></li>
-                        <li class="header__li"><a href="#" class="header__link">Отзывы</a></li>
-                        <li class="header__li"><a href="#" class="header__link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="header__info">
-                    <div class="header__num">
-                        <img src="../img/common/call-icon.svg" alt="Call">
-                        <p class="header__number">+7(968) 499 - 00 - 03</p>
-                    </div>
-                    <a href="#" class="header__text">Позвонить нам</a>
+    <div class="container">
+        <div class="header">
+            <a href="#" class="header__logotype"><img src="../img/common/Logotype.svg" alt="Logotype"></a>
+            <nav>
+                <ul class="header__nav">
+                    <li class="header__li"><a href="../pages/index.html" class="header__link">Главная</a></li>
+                    <li class="header__li"><a href="../pages/service.html" class="header__link">Услуги</a></li>
+                    <li class="header__li"><a href="../pages/about.html" class="header__link">О нас</a></li>
+                    <li class="header__li"><a href="../pages/comments.html" class="header__link">Отзывы</a></li>
+                    <li class="header__li"><a href="../pages/contacts.html" class="header__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__info">
+                <div class="header__num">
+                    <img src="../img/common/call-icon.svg" alt="Call">
+                    <p class="header__number">+7(968) 499 - 00 - 03</p>
                 </div>
+                <a href="#form" class="header__text">Позвонить нам</a>
             </div>
         </div>
-    </header>
+    </div>
+</header>
     <main class="banner">
         <div class="container">
             <div class="banner__wrapp">
@@ -322,28 +322,29 @@
             </div>
         </div>
     </section>
-    <section class="form">
+    <section id="form" class="form">
         <div class="container">
             <div class="form__wrapp">
                 <div class="form__info">
                     <h2 class="form__title title">ЗАПИШИТЕСЬ НА <span>БЕСПЛАТНУЮ</span> КОНСУЛЬТАЦИЮ ПРЯМО СЕЙЧАС</h2>
                     <p class="form__text">Заполните форму и наш оператор свяжется с вами в ближайшее время</p>
                 </div>
-                <form>
+                <form name="call-form" action="https://formspree.io/f/xpzndbee" method="post">
                     <label class="form__inputs">
-                        <input type="text" placeholder="Введите ваше имя" class="form__input">
-                        <input type="text" placeholder="Введите ваш номер телефона" class="form__input">
-                        <select class="form__select" id="selectProduct">
+                        <input name="firstname" type="text" placeholder="Введите ваше имя" class="form__input" required="">
+                        <input name="telephone" type="tel" placeholder="Введите ваш номер телефона" class="form__input" required="">
+                        <select name="contact form" class="form__select" id="selectProduct" required="">
                             <option value="0" selected disabled>Каким способом удобнее связаться?</option>
                             <option value="1" class="form__opt">По телефону</option>
                             <option value="2">Смс-сообщение</option>
                             <option value="3">WhatsApp</option>
                             <option value="4">Telegram</option>
                         </select>
+                        <label for="message" class="form__label">Комментарий</label>
+                        <textarea rows="5" id="message" name="message" class="form__comment" placeholder="Коротко опишите свою проблему." required=""></textarea>
+                        <button type="submit" class="form__btn btn">Отправить</button>
                     </label>
-                    <input type="submit" class="form__btn btn">
                 </form>
-
             </div>
         </div>
     </section>

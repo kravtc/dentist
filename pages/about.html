@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>О нас</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header">
+            <a href="#" class="header__logotype"><img src="../img/common/Logotype.svg" alt="Logotype"></a>
+            <nav>
+                <ul class="header__nav">
+                    <li class="header__li"><a href="../pages/index.html" class="header__link">Главная</a></li>
+                    <li class="header__li"><a href="../pages/service.html" class="header__link">Услуги</a></li>
+                    <li class="header__li"><a href="../pages/about.html" class="header__link">О нас</a></li>
+                    <li class="header__li"><a href="../pages/comments.html" class="header__link">Отзывы</a></li>
+                    <li class="header__li"><a href="../pages/contacts.html" class="header__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__info">
+                <div class="header__num">
+                    <img src="../img/common/call-icon.svg" alt="Call">
+                    <p class="header__number">+7(968) 499 - 00 - 03</p>
+                </div>
+                <a href="#form" class="header__text">Позвонить нам</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="form" class="form">
+    <div class="container">
+        <div class="form__wrapp">
+            <div class="form__info">
+                <h2 class="form__title title">ЗАПИШИТЕСЬ НА <span>БЕСПЛАТНУЮ</span> КОНСУЛЬТАЦИЮ ПРЯМО СЕЙЧАС</h2>
+                <p class="form__text">Заполните форму и наш оператор свяжется с вами в ближайшее время</p>
+            </div>
+            <form name="call-form" action="https://formspree.io/f/xpzndbee" method="post">
+                <label class="form__inputs">
+                    <input name="firstname" type="text" placeholder="Введите ваше имя" class="form__input" required="">
+                    <input name="telephone" type="tel" placeholder="Введите ваш номер телефона" class="form__input" required="">
+                    <select name="contact form" class="form__select" id="selectProduct" required="">
+                        <option value="0" selected disabled>Каким способом удобнее связаться?</option>
+                        <option value="1" class="form__opt">По телефону</option>
+                        <option value="2">Смс-сообщение</option>
+                        <option value="3">WhatsApp</option>
+                        <option value="4">Telegram</option>
+                    </select>
+                    <label for="message" class="form__label">Комментарий</label>
+                    <textarea rows="5" id="message" name="message" class="form__comment" placeholder="Коротко опишите свою проблему." required=""></textarea>
+                    <button type="submit" class="form__btn btn">Отправить</button>
+                </label>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapp">
+            <a href="#" class="header__logotype"><img src="../img/common/Logotype.svg" alt="Logotype"></a>
+            <ul class="footer__info">
+                <li class="footer__li"><h5 class="footer__title">Контакты</h5><p>+7 (968) 499 - 00 - 03</p></li>
+                <li class="footer__li"><h5 class="footer__title">Адрес </h5><p>г.Люберцы, ул. 3-е Почтовое Отделение 82</p></li>
+                <li class="footer__li"><h5 class="footer__title">Часы работы</h5><p>Пн-Сб с 9:00 до 21:00, Вс: 10:00 — 22:00</p></li>
+            </ul>
+            <div class="footer__map">
+                <p class="footer__title">Схема проезда</p>
+                <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.6439481818877!2d37.86252690064011!3d55.68398229738809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab613ba0c82dd%3A0x99947b56b0d1e3d!2z0YPQuy4gMy3QtSDQn9C-0YfRgtC-0LLQvtC1INC-0YLQtNC10LvQtdC90LjQtSwgODIsINCb0Y7QsdC10YDRhtGLLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCAxNDAwMDg!5e0!3m2!1sru!2sru!4v1663424825417!5m2!1sru!2sru" width="317" height="135" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <ul class="footer__social">
+                <li><a href="https://vk.com/vk" class="footer__link-vk" target="_blank" rel="noopener"></a></li>
+                <li><a href="https://www.instagram.com" class="footer__link-inst" target="_blank" rel="noopener"></a></li>
+                <li><a href="https://ru-ru.facebook.com/" class="footer__link-fb" target="_blank" rel="noopener"></a></li>
+                <li><a href="https://web.telegram.org/z/" class="footer__link-tg" target="_blank" rel="noopener"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

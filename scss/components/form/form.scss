@@ -2,8 +2,7 @@
 @import "../../common/extends";
 
 .form {
-  margin-top: 6.25rem;
-  height: 40rem;
+  margin-top: 100px;
   background-image: url(../../../img/bg/bg-form.png);
   background-repeat: no-repeat;
   background-position: 60% 57%;
@@ -46,7 +45,7 @@
     color: #769297;
   }
   &__select {
-    width: 666px;
+    width: 664px;
     border: 2px solid $accent-color;
     padding: 12px 0 12px 20px;
     appearance: none;
@@ -62,9 +61,29 @@
     background-image: none;
   }
   &__btn {
-    padding: 20px 90px;
+    width: 234px;
+    padding: 20px;
     font-size: 1.125rem;
     text-align: center;
-    margin: 44px 0 0 187px;
+    margin-top: 44px;
+    margin-left: 213px;
+  }
+  &__label {
+    @extend %h3-text;
+    font-weight: $medium;
+    margin: 22px 4px 10px;
+  }
+  &__comment {
+    padding: 12px 20px;
+    border: 2px solid $accent-color;
+    border-radius: 6px;
+    width: 620px;
+    &::placeholder {
+      color: #769297;
+    }
+    &:focus {
+      outline: none;
+      background-image: none;
+    }
   }
 }

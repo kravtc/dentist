@@ -41,7 +41,7 @@
   letter-spacing: 0.015em;
 }
 
-.form__inputs, .form__text, .footer__info p, .footer__title, header .header__text, header .header__number, header .header__li, .comment__head, .service__link, .information__link, .information__text, .discount__text {
+.form__label, .form__inputs, .form__text, .footer__info p, .footer__title, header .header__text, header .header__number, header .header__li, .comment__head, .service__link, .information__link, .information__text, .discount__text {
   font-size: 1rem;
   line-height: 1.3;
   letter-spacing: 0.015em;
@@ -78,7 +78,7 @@
   letter-spacing: 0.015em;
 }
 
-.form__inputs, .form__text, .footer__info p, .footer__title, header .header__text, header .header__number, header .header__li, .comment__head, .service__link, .information__link, .information__text, .discount__text {
+.form__label, .form__inputs, .form__text, .footer__info p, .footer__title, header .header__text, header .header__number, header .header__li, .comment__head, .service__link, .information__link, .information__text, .discount__text {
   font-size: 1rem;
   line-height: 1.3;
   letter-spacing: 0.015em;
@@ -281,6 +281,17 @@
   top: 4%;
   left: -11%;
 }
+.service__name::after {
+  content: "";
+  background-image: url("../../img/service/service-open.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 15%;
+  height: 39px;
+  display: block;
+  top: 23%;
+  right: -20%;
+}
 .service__name.therapy::before {
   background-image: url("../../img/service/icon2.svg");
 }
@@ -298,17 +309,6 @@
 }
 .service__name.whitening::before {
   background-image: url("../../img/service/icon6.svg");
-}
-.service__name::after {
-  content: "";
-  background-image: url("../../img/service/service-open.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 15%;
-  height: 39px;
-  display: block;
-  top: 23%;
-  right: -20%;
 }
 .service__open {
   display: flex;
@@ -463,7 +463,7 @@
   letter-spacing: 0.015em;
 }
 
-.form__inputs, .form__text, .footer__info p, .footer__title, header .header__text, header .header__number, header .header__li, .discount__text, .information__text, .information__link, .service__link, .comment__head {
+.form__label, .form__inputs, .form__text, .footer__info p, .footer__title, header .header__text, header .header__number, header .header__li, .discount__text, .information__text, .information__link, .service__link, .comment__head {
   font-size: 1rem;
   line-height: 1.3;
   letter-spacing: 0.015em;
@@ -546,7 +546,7 @@ header .header__text:hover {
   letter-spacing: 0.015em;
 }
 
-.form__inputs, .form__text, .footer__info p, .footer__title, .discount__text, .information__text, .information__link, .service__link, .comment__head, header .header__li, header .header__number, header .header__text {
+.form__label, .form__inputs, .form__text, .footer__info p, .footer__title, .discount__text, .information__text, .information__link, .service__link, .comment__head, header .header__li, header .header__number, header .header__text {
   font-size: 1rem;
   line-height: 1.3;
   letter-spacing: 0.015em;
@@ -603,7 +603,7 @@ header .header__text:hover {
   letter-spacing: 0.015em;
 }
 
-.form__inputs, .form__text, .footer__info p, .footer__title, .discount__text, .information__text, .information__link, .service__link, .comment__head, header .header__li, header .header__number, header .header__text {
+.form__label, .form__inputs, .form__text, .footer__info p, .footer__title, .discount__text, .information__text, .information__link, .service__link, .comment__head, header .header__li, header .header__number, header .header__text {
   font-size: 1rem;
   line-height: 1.3;
   letter-spacing: 0.015em;
@@ -701,15 +701,14 @@ header .header__text:hover {
   letter-spacing: 0.015em;
 }
 
-.form__inputs, .form__text, .discount__text, .information__text, .information__link, .service__link, .comment__head, header .header__li, header .header__number, header .header__text, .footer__title, .footer__info p {
+.form__label, .form__inputs, .form__text, .discount__text, .information__text, .information__link, .service__link, .comment__head, header .header__li, header .header__number, header .header__text, .footer__title, .footer__info p {
   font-size: 1rem;
   line-height: 1.3;
   letter-spacing: 0.015em;
 }
 
 .form {
-  margin-top: 6.25rem;
-  height: 40rem;
+  margin-top: 100px;
   background-image: url(../../../img/bg/bg-form.png);
   background-repeat: no-repeat;
   background-position: 60% 57%;
@@ -751,7 +750,7 @@ header .header__text:hover {
   color: #769297;
 }
 .form__select {
-  width: 666px;
+  width: 664px;
   border: 2px solid #1D97C1;
   padding: 12px 0 12px 20px;
   appearance: none;
@@ -767,14 +766,34 @@ header .header__text:hover {
   background-image: none;
 }
 .form__btn {
-  padding: 20px 90px;
+  width: 234px;
+  padding: 20px;
   font-size: 1.125rem;
   text-align: center;
-  margin: 44px 0 0 187px;
+  margin-top: 44px;
+  margin-left: 213px;
+}
+.form__label {
+  font-weight: 500;
+  margin: 22px 4px 10px;
+}
+.form__comment {
+  padding: 12px 20px;
+  border: 2px solid #1D97C1;
+  border-radius: 6px;
+  width: 620px;
+}
+.form__comment::placeholder {
+  color: #769297;
+}
+.form__comment:focus {
+  outline: none;
+  background-image: none;
 }
 
 html,
 body {
+  background-color: #fefefe;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   color: #292F33;

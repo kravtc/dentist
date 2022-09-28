@@ -39,21 +39,23 @@
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  &__social a {
-    position: relative;
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin: 0;
-  }
-  &__social a::before {
+    & a {
+      position: relative;
+      display: block;
+      width: 50px;
+      height: 50px;
+      margin: 0;
+    }
+    & a::before {
       content: "";
       position: absolute;
       width: 50px;
       height: 50px;
       background-size: 100% 100%;
+    }
   }
+
+
   &__link-vk::before {
     background-image: url(../../../img/social/soc-vk.svg);
   }

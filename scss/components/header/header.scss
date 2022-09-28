@@ -20,10 +20,10 @@ header{
     &__link {
       text-decoration: none;
       color: $text-main;
-    }
-    &__link:hover {
-      color: $btn-hover;
-      font-weight: $medium;
+      &:hover {
+        color: $btn-hover;
+        font-weight: $medium;
+      }
     }
     &__info {
       display: flex;
@@ -45,11 +45,11 @@ header{
       color: $accent-color;
       text-decoration: none;
       font-weight: $medium;
-    }
-    &__text:hover{
-      color: $btn-hover;
-      font-weight: $bold;
-      text-decoration: underline;
+      &:hover{
+        color: $btn-hover;
+        font-weight: $bold;
+        text-decoration: underline;
+      }
     }
   }
 }
