@@ -22,7 +22,7 @@
   padding-right: 1rem;
 }
 
-.footer__wrapp, header .header__nav, header .header, .comment__head, .discount__info, .banner__wrapp {
+.footer__wrapp, header .header__nav, header .header, .price__links, .comment__head, .discount__info, .banner__wrapp {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +35,7 @@
   letter-spacing: 0.015em;
 }
 
-.banner__btn, .banner__text, .title {
+.banner__btn, .price__category, .banner__text, .subtitle {
   font-size: 1.75rem;
   line-height: 1.3;
   letter-spacing: 0.015em;
@@ -59,7 +59,7 @@
   padding-right: 1rem;
 }
 
-.footer__wrapp, header .header__nav, header .header, .comment__head, .discount__info, .banner__wrapp {
+.footer__wrapp, header .header__nav, header .header, .price__links, .comment__head, .discount__info, .banner__wrapp {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +72,7 @@
   letter-spacing: 0.015em;
 }
 
-.banner__btn, .banner__text, .title {
+.banner__btn, .price__category, .banner__text, .subtitle {
   font-size: 1.75rem;
   line-height: 1.3;
   letter-spacing: 0.015em;
@@ -84,10 +84,20 @@
   letter-spacing: 0.015em;
 }
 
-.title {
+.subtitle {
   font-weight: 700;
-  text-align: center;
   margin: 0 0 30px;
+}
+
+.pages-title {
+  margin: 55px 0 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*banner*/
@@ -432,6 +442,63 @@
   position: relative;
 }
 
+/*page two*/
+.price__category {
+  font-weight: 500;
+  margin: 0 0 20px;
+  color: #4C6474;
+}
+.price__wrap {
+  border-radius: 5px;
+  border: 1px solid #edeff0;
+  margin-bottom: 50px;
+}
+.price th {
+  color: #999999;
+  padding: 16px 24px;
+  text-align: left;
+  font-weight: 400;
+}
+.price th:last-child {
+  text-align: right;
+}
+.price thead tr {
+  background-color: #f3f5f6;
+}
+.price tbody tr:hover {
+  background: #F0FBFE;
+  transition-duration: 0.6s;
+}
+.price tr td {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 16px 24px;
+}
+.price tr td:last-child {
+  text-align: right;
+}
+.price__ps {
+  font-weight: 400;
+  color: #999999;
+  margin: 0;
+}
+.price__links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 55px;
+}
+.price__anchor {
+  text-decoration: none;
+  color: #53C7F0;
+}
+.price__anchor:hover {
+  color: #0B6F92;
+}
+
+.contacts {
+  background-color: #F0FBFE;
+  margin-top: 55px;
+}
+
 /*color*/
 /*font-weight*/
 /*color*/
@@ -444,7 +511,7 @@
   padding-right: 1rem;
 }
 
-.footer__wrapp, header .header__nav, header .header, .banner__wrapp, .discount__info, .comment__head {
+.footer__wrapp, header .header__nav, header .header, .banner__wrapp, .discount__info, .comment__head, .price__links {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -457,7 +524,7 @@
   letter-spacing: 0.015em;
 }
 
-.banner__btn, .title, .banner__text {
+.banner__btn, .subtitle, .banner__text, .price__category {
   font-size: 1.75rem;
   line-height: 1.3;
   letter-spacing: 0.015em;
@@ -527,7 +594,7 @@ header .header__text:hover {
   padding-right: 1rem;
 }
 
-.footer__wrapp, .banner__wrapp, .discount__info, .comment__head, header .header, header .header__nav {
+.footer__wrapp, .banner__wrapp, .discount__info, .comment__head, .price__links, header .header, header .header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -540,7 +607,7 @@ header .header__text:hover {
   letter-spacing: 0.015em;
 }
 
-.banner__btn, .title, .banner__text {
+.banner__btn, .subtitle, .banner__text, .price__category {
   font-size: 1.75rem;
   line-height: 1.3;
   letter-spacing: 0.015em;
@@ -584,7 +651,7 @@ header .header__text:hover {
   padding-right: 1rem;
 }
 
-.footer__wrapp, .banner__wrapp, .discount__info, .comment__head, header .header, header .header__nav {
+.footer__wrapp, .banner__wrapp, .discount__info, .comment__head, .price__links, header .header, header .header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -597,7 +664,7 @@ header .header__text:hover {
   letter-spacing: 0.015em;
 }
 
-.title, .banner__text, .banner__btn {
+.subtitle, .banner__text, .price__category, .banner__btn {
   font-size: 1.75rem;
   line-height: 1.3;
   letter-spacing: 0.015em;
@@ -682,7 +749,7 @@ header .header__text:hover {
   padding-right: 1rem;
 }
 
-.banner__wrapp, .discount__info, .comment__head, header .header, header .header__nav, .footer__wrapp {
+.banner__wrapp, .discount__info, .comment__head, .price__links, header .header, header .header__nav, .footer__wrapp {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -695,7 +762,7 @@ header .header__text:hover {
   letter-spacing: 0.015em;
 }
 
-.title, .banner__text, .banner__btn {
+.subtitle, .banner__text, .price__category, .banner__btn {
   font-size: 1.75rem;
   line-height: 1.3;
   letter-spacing: 0.015em;
