@@ -439,6 +439,52 @@ table {
 }
 
 .contacts {
-  background-color: $bg-footer;
-  margin-top: 55px;
+  &__bg {
+    background-color: #f3f5f6;
+    margin-top: 55px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__mini-title {
+    margin: 8px 0 0;
+    font-weight: $medium;
+    color: #4C6474;
+  }
+  &__text {
+    margin: 8px 0 8px;
+  }
+  &__how-to-get-link {
+    color: $btn-color;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+.how-to-get {
+  margin-top: 100px;
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .metro {
+    color: #9845AD;
+  }
+  &__text {
+    margin: 10px 0 0;
+  }
+  &__subtitle {
+    @extend %h2-text;
+    margin: 0;
+  }
 }
